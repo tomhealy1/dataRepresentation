@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book catalogue="technical">
+        <ISBN>1491957662</ISBN>
+        <ISBN-13>9781491957660</ISBN-13>
+        <title lang="en">Python for Data Analysis</title>
+        <author>Wes McKinney</author>
+    </book>
+
+    <book catalogue="technical">
+        <ISBN>1492041130</ISBN>
+        <ISBN-13>9781492041139</ISBN-13>
+        <title lang="en">Data Science from Scratch</title>
+        <author>Joel Grus</author>
+    </book>
+
+    <book catalogue="cookery">
+        <ISBN>1784724297</ISBN>
+        <ISBN-13>9781784724290</ISBN-13>
+        <title lang="en">The World Atlas of Coffee : From beans to brewing - coffees explored, explained and enjoyed</title>
+        <author>James Hoffmann</author>
+    </book>
+    <book catalogue="cookery">
+        <ISBN>1444756699</ISBN>
+        <ISBN-13>9781444756692</ISBN-13>
+        <title lang="en">Gordon Ramsay's Ultimate Cookery Course</title>
+        <author>Gordon Ramsey</author>
+    </book>
+
+</library>
