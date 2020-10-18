@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Declaration-->
+<breakfast_menu> <!--Root Node-->
+    <food> <!-- Child element 1-->
+        <name>Belgian Waffles</name><!-- Child element of food child node-->
+        <price>$5.95</price>
+        <description>Two of our faomus Belgian Waffles with syrup</description>
+        <calories>650</calories>
+    </food>
+
+    <food><!-- Child element 2-->
+        <name>Strawberry Belgian Waffles</name>
+        <price>$7.95</price>
+        <description>
+        Two of our faomus Belgian Waffles with syrup
+        </description>
+        <calories>900</calories>
+    </food>
+
+</breakfast_menu>
