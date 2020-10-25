@@ -1,24 +1,22 @@
 <html>
     <head>
         <title>
-            test Update
+            test Delete
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <body>
-            <button onclick="callUpdate()">Test Update</button>
+            <button onclick="callDelete('test')">Test Delete</button>
 
             
 
         </body>
         <script>
-            function callUpdate() {
-                var reg = "12 G 12352"
-                var car = { price:2000}
-                //console.log("function called")
+            function callDelete(reg) {
+                
                 $.ajax({
                     url:"http://127.0.0.1:5000/cars/"+encodeURI(reg),
-                    method: "PUT",
-                    data:JSON.stringify(car),
+                    method: "DELETE",
+                    data:"",
                     dataType:"JSON",
                     contentType: "application/json; charset=utf-8",
                     success: function(result){
