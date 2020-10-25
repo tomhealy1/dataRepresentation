@@ -1,0 +1,193 @@
+$ curl http://andrewbeatty1.pythonanywhere.com/books
+
+
+$ curl  -X DELETE http://andrewbeatty1.pythonanywhere.com/books/7
+{"done":true}
+
+
+$ curl --dump-header - http://andrewbeatty1.pythonanywhere.com/books/1
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:29:34 GMT
+Content-Type: application/json
+Content-Length: 3
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{}
+
+
+$ curl --dump-header - http://andrewbeatty1.pythonanywhere.com/books
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:29:47 GMT
+Content-Type: application/json
+Content-Length: 899
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+[{"Author":"4","Price":4,"Title":"333","id":8},{"Author":"34","Price":34,"Title":"34","id":10},{"Author":"234","Price":214,"Title":"ee'234'","id":11},{"Author":"FA","Price":4000,"Title":"myBook","id":12},{"Author":"jk","Price":8888,"Title":"test","id":16},{"Author":"rt","Price":1999,"Title":"I DID IT","id":19},{"Author":"xxx","Price":2000,"Title":"xxx","id":21},{"Author":"Chris C","Price":999,"Title":"Curl For Dummies","id":27},{"Author":"Chris C","Price":777,"Title":"Curl For Dummies Edition 2","id":28},{"Author":"Chris C","Price":777,"Title":"Acing The Curl Class An Autobiography of Chris Collins 2","id":29},{"Author":"Eoin Dowling","Price":20,"Title":"Testing the Mighty Curl","id":34},{"Author":"blah blah","Price":2000,"Title":"blah","id":36},{"Author":"Mount","Price":3000,"Title":"Curl Programming Bible","id":42},{"Author":"Eoin","Price":45678,"Title":"Getting Q4 to work","id":46}]
+
+
+
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:37:00 GMT
+Content-Type: application/json
+Content-Length: 853
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+[{"Author":"34","Price":34,"Title":"34","id":10},{"Author":"234","Price":214,"Title":"ee'234'","id":11},{"Author":"FA","Price":4000,"Title":"myBook","id":12},{"Author":"jk","Price":8888,"Title":"test","id":16},{"Author":"rt","Price":1999,"Title":"I DID IT","id":19},{"Author":"xxx","Price":2000,"Title":"xxx","id":21},{"Author":"Chris C","Price":999,"Title":"Curl For Dummies","id":27},{"Author":"Chris C","Price":777,"Title":"Curl For Dummies Edition 2","id":28},{"Author":"Chris C","Price":777,"Title":"Acing The Curl Class An Autobiography of Chris Collins 2","id":29},{"Author":"Eoin Dowling","Price":20,"Title":"Testing the Mighty Curl","id":34},{"Author":"blah blah","Price":2000,"Title":"blah","id":36},{"Author":"Mount","Price":3000,"Title":"Curl Programming Bible","id":42},{"Author":"Eoin","Price":45678,"Title":"Getting Q4 to work","id":46}]
+
+
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books/11
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:37:26 GMT
+Content-Type: application/json
+Content-Length: 55
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"Author":"234","Price":214,"Title":"ee'234'","id":11}
+
+$ curl http://andrewbeatty1.pythonanywhere.com/books
+[{"Author":"34","Price":34,"Title":"34","id":10},{"Author":"234","Price":214,"Title":"ee'234'","id":11},{"Author":"FA","Price":4000,"Title":"myBook","id":12},{"Author":"jk","Price":8888,"Title":"test","id":16},{"Author":"rt","Price":1999,"Title":"I DID IT","id":19},{"Author":"xxx","Price":2000,"Title":"xxx","id":21},{"Author":"Chris C","Price":999,"Title":"Curl For Dummies","id":27},{"Author":"Chris C","Price":777,"Title":"Curl For Dummies Edition 2","id":28},{"Author":"Chris C","Price":777,"Title":"Acing The Curl Class An Autobiography of Chris Collins 2","id":29},{"Author":"Eoin Dowling","Price":20,"Title":"Testing the Mighty Curl","id":34},{"Author":"blah blah","Price":2000,"Title":"blah","id":36},{"Author":"Mount","Price":3000,"Title":"Curl Programming Bible","id":42},{"Author":"Eoin","Price":45678,"Title":"Getting Q4 to work","id":46}]
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:49:54 GMT
+Content-Type: application/json
+Content-Length: 853
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+[{"Author":"34","Price":34,"Title":"34","id":10},{"Author":"234","Price":214,"Title":"ee'234'","id":11},{"Author":"FA","Price":4000,"Title":"myBook","id":12},{"Author":"jk","Price":8888,"Title":"test","id":16},{"Author":"rt","Price":1999,"Title":"I DID IT","id":19},{"Author":"xxx","Price":2000,"Title":"xxx","id":21},{"Author":"Chris C","Price":999,"Title":"Curl For Dummies","id":27},{"Author":"Chris C","Price":777,"Title":"Curl For Dummies Edition 2","id":28},{"Author":"Chris C","Price":777,"Title":"Acing The Curl Class An Autobiography of Chris Collins 2","id":29},{"Author":"Eoin Dowling","Price":20,"Title":"Testing the Mighty Curl","id":34},{"Author":"blah blah","Price":2000,"Title":"blah","id":36},{"Author":"Mount","Price":3000,"Title":"Curl Programming Bible","id":42},{"Author":"Eoin","Price":45678,"Title":"Getting Q4 to work","id":46}]
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books/16
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:50:03 GMT
+Content-Type: application/json
+Content-Length: 52
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"Author":"jk","Price":8888,"Title":"test","id":16}
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i -H "Content-Type:application/json" -X POST -d "{\"Title\":\"xxxxx\", \"Author\":\"xxxxxxxxxx"\,\"Price\":"349"}"http://andrewbeatty1.pythonanywhere.com/books
+curl: no URL specified!
+curl: try 'curl --help' for more information
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i -H "Content-Type:application/json" -X POST -d "{\"Title\":\"yerra\",\"Author\":\"xxxxxxxxxx"\,\"Price\":349}" http://andrewbeatty1.pythonanywhere.com/books
+curl: no URL specified!
+curl: try 'curl --help' for more information
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i -H "Content-Type:application/json" -X POST -d "{\"Title\":\"yerra\",\"Author\":\"xxxxxxxxxx"\,\"Price\":349}" http://andrewbeatty1.pythonanywhere.com/books
+curl: no URL specified!
+curl: try 'curl --help' for more information
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i -H "Content-Type:application/json" -X POST -d "{\"Title\":\"yerra\",\"Author\":\"xxxxxxxxxx"\,\"Price\":349}" http://andrewbeatty1.pythonanywhere.com/books
+curl: no URL specified!
+curl: try 'curl --help' for more information
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl  -i -H "Content-Type:application/json" -X POST -d "{\"Title\":\"yerra\",\"Author\":\"xxxxxxxxxx"\,\"Price\":349}" http://andrewbeatty1.pythonanywhere.com/books
+curl: no URL specified!
+curl: try 'curl --help' for more information
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl  -i -H "Content-Type:application/json" -X POST -d "{\"Title\":\"yerra\",\"Author\":\"xxxxxxxxxx\",\"Price\":349}" http://andrewbeatty1.pythonanywhere.com/books
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:55:58 GMT
+Content-Type: application/json
+Content-Length: 60
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"Author":"xxxxxxxxxx","Price":349,"Title":"yerra","id":48}
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books/48
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:56:16 GMT
+Content-Type: application/json
+Content-Length: 60
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"Author":"xxxxxxxxxx","Price":349,"Title":"yerra","id":48}
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl  -i -H "Content-Type:application/json" -X PUT -d "{\"Price\":100000349}" http://andrewbeatty1.pythonanywhere.com/books/48
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:56:58 GMT
+Content-Type: application/json
+Content-Length: 66
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"Author":"xxxxxxxxxx","Price":100000349,"Title":"yerra","id":48}
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books/48
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:57:05 GMT
+Content-Type: application/json
+Content-Length: 66
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"Author":"xxxxxxxxxx","Price":100000349,"Title":"yerra","id":48}
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i -X DELETE http://andrewbeatty1.pythonanywhere.com/books/48
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:57:46 GMT
+Content-Type: application/json
+Content-Length: 14
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{"done":true}
+
+Teamwork@TW-ADM-L-TH C:\Users\Teamwork\Desktop\Data\Course
+$ curl -i http://andrewbeatty1.pythonanywhere.com/books/48
+HTTP/1.1 200 OK
+Date: Sun, 25 Oct 2020 09:57:49 GMT
+Content-Type: application/json
+Content-Length: 3
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Clacks-Overhead: GNU Terry Pratchett
+Server: PythonAnywhere
+
+{}
